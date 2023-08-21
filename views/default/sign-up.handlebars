@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="caffeinna Creatives">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Rezeet - Sign Up</title>
+    <link rel="stylesheet" href="assets/css/style2888.css?v1.0.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/international-telephone-input.css" />
+
+
+</head>
+
+<body class="nk-body" data-navbar-collapse="xl">
+    <div class="nk-app-root ">
+        <header class="nk-header">
+            <div class="nk-header-main nk-navbar-main  is-theme is-theme-bg">
+                <div class="container">
+                    <div class="nk-header-wrap">
+                        <div class="nk-header-logo">
+                            <a href="#" class="logo-link">
+                                <div class="logo-wrap"><img class="logo-img logo-light" src="images/logo-s1-dark.png"  alt="brand-logo"><img class="logo-img logo-dark" src="images/logo-s2-dark.png" srcset="# 2x"
+                                        alt="brand-logo"></div>
+                            </a>
+                        </div>
+                        <nav class="nk-header-menu nk-navbar">
+                            <div>
+                                <ul class="nk-nav">
+                                    <li class="nk-nav-item"><a href="#" class="nk-nav-link"><span class="nk-nav-text"  style="color: #271462;">About Us</span></a></li>
+                                
+                                    <li class="nk-nav-item"><a href="#" class="nk-nav-link"><span class="nk-nav-text"  style="color: #271462;">Our Product</span></a></li>
+                                    <li class="nk-nav-item"><a href="#" target="_blank" class="nk-nav-link"><span class="nk-nav-text"  style="color: #271462;">Our Partners</span></a></li>
+                                    <li class="nk-nav-item"><a href="#" target="_blank" class="nk-nav-link"><span class="nk-nav-text"  style="color: #271462;">Resources</span></a></li>
+                                    <li class="nk-nav-item"><a href="#" target="_blank" class="nk-nav-link"><span class="nk-nav-text"  style="color: #271462;">Careers</span></a></li>
+                                </ul>
+                                <div class="nk-navbar-btn d-md-none">
+                                    {{!-- <ul class="nk-btn-group sm justify-content-center">
+                                        <li class="w-100"><a href="sign-up" target="_blank" class="btn btn-primary w-100"><em class="icon ni  ni-bag-fill"></em><span>For Partners</span></a></li>
+                                    </ul> --}}
+                                </div>
+                            </div>
+
+                        </nav>
+                        <div class="nk-header-action nk-navbar-toggle"> <!--nk-navbar-toggle hides in wide screen -->
+                            <ul class="nk-btn-group sm justify-content-center">
+                                {{!-- <li class="d-none d-md-block"><a href="sign-up" class="btn btn-primary text-nowrap text-nowrap"><em class="icon ni ni-bag-fill"></em><span>For Partners</span></a></li> --}}
+                                <li class="nk-navbar-toggle"><button class="btn navbar-toggle rounded-1 p-2 h-100"><em class="icon ni ni-menu"></em></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="nk-pages">
+            <section class="nk-help-center-section nk-space-y-s-120 nk-space-lg-y-s-180 nk-space-lg-y-e-120  has-mask" data-aos="fade-up" data-aos-delay="200">
+                <div class="nk-mask blur-2"></div>
+                <div class="nk-split-page flex-column flex-xl-row">
+                    <div class="nk-split-col nk-auth-col">
+                        <div class="nk-form-card card p-0 card-gutter-md nk-auth-form-card mx-md-9 mx-xl-auto">
+                            <div class="card-body p-5 " >
+                                <div class="one nk-form-card-head text-center pb-5">
+                                    <h3 class="title mb-2">Sign up for an account</h3>
+                                    <p class="text">Let us know little about your business</p>
+                                </div>
+                                <div class="two nk-form-card-head text-center pb-5">
+                                    <div class="form-logo mb-3"><a href="#"><img class="logo-img" src="images/logo-s1-dark.png" srcset="" alt=""></a></div>
+                                    <h3 class="title mb-2">Create Account User</h3>
+                                    <p class="text">Set up a user to manage your account</p>
+                                </div>
+                                <form action="sign-up" method="post">
+                                    <div id="one" class="one row gy-4">
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Business Name</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter business name" name="business_name"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Email</label>
+                                                <div class="form-control-wrap"><input type="text" id="email" class="form-control" required placeholder="Enter business email" name="bus_email"></div>
+                                            </div>
+                                            <p id="email-error" style="color: red; font-size: 12px;"></p>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Phone</label>
+                                                <div class="form-control-wrap">
+                                                    <input id="bus_phone" type="tel" class="form-control" required placeholder="Enter business phone" name="bus_phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Address</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter address" name="address"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">State/Province</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter city" name="city"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Zip/Postal Code</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter post code" name="postal_code"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Country</label>
+                                                <div class="form-control-wrap">
+                                                    {{!-- <input type="text" class="form-control" required placeholder="Enter your country" name="country"> --}}
+                                                    <select  class="form-control" name="country" id="">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Canada">Canada</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <div class="form-group"><button id="next" class="btn btn-block" style="background-color: #271462; color:#fff" type="button">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="two" class="two row gy-4">
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">First Name</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter your First name" name="firstName"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Last Name</label>
+                                                <div class="form-control-wrap"><input type="text" class="form-control" required placeholder="Enter your Last name" name="lastName"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Email</label>
+                                                <div class="form-control-wrap"><input type="email" class="form-control" required placeholder="Enter your email" name="email"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Password</label>
+                                                <div class="form-control-wrap"><span style="cursor: pointer;"  class="form-control-icon end password-toggle" title="Toggle show/hide password"><em id="eye" class="on icon ni ni-eye-fill text-primary"></em></span>
+                                                    <input
+                                                        id="password" type="password" class="form-control" required placeholder="At least 8 characters" name="password"></div>
+                                            </div>
+                                            <p id="password-error1" style="color: red; font-size: 12px;"></p>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group"><label class="form-label">Confirm Password</label>
+                                                <div class="form-control-wrap"><span style="cursor: pointer;"  class="form-control-icon end password-toggle" title="Toggle show/hide password"><em id="eye2" class="on icon ni ni-eye-fill text-primary"></em></span>
+                                                    <input
+                                                        id="password2" type="password" class="form-control" required placeholder="At least 8 characters" name="confirmPassword"></div>
+                                            </div>
+                                            <p id="password-error" style="color: red; font-size: 12px;"></p>
+                                        </div>
+                                        <div class="col-12">
+                                            <div  class="form-group"><button id="submitBtn" class="btn btn-block"  style="background-color: #271462; color:#fff"  type="submit">Sign Up</button></div>
+                                        </div>
+                                        {{#if msg}}
+                                        <br> 
+                                            <p id="" style="color: red; font-size: 12px;">{{msg}}</p>
+                                        {{/if}}
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/bundle2888.js?v1.0.0"></script>
+    <script src="assets/js/scripts2888.js?v1.0.0"></script>
+    <script src="assets/js/regex.js?v1.0.0"></script>
+    <script src="assets/js/international-telephone-input.js"></script>
+</body>
+
+</html>

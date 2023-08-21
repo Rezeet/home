@@ -1,0 +1,5 @@
+ssh -i rezeetdb.pem ubuntu@34.232.191.236
+
+
+
+https://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@github.com/MajorOjay/rezeet.git
