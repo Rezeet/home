@@ -15,6 +15,9 @@ router.all('/*', (req, res, next) => {
 router.route('/')
     .get(defaultController.index);
 
+router.route('/about')
+    .get(defaultController.about);
+
 
 router.route('/sign-up')
     .get(defaultController.signup)

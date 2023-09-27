@@ -18,6 +18,10 @@ module.exports  = {
     index: (req, res) => {
             res.render('default/home');
     },
+    
+    about: (req, res) => {
+            res.render('default/about');
+    },
 
 
     register: async (req, res) => {
