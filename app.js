@@ -8,7 +8,6 @@ const flash = require('connect-flash');
 const nodemailer = require('nodemailer');
 const mysqlStore = require('express-mysql-session');
 const sitemap = require('express-sitemap');
-const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 require('dotenv').config();
 
@@ -24,11 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 const sessionStore = new mysqlStore(option);
 
 
-// JWT secret for activation code
-const activationCodeSecret = 'your-secret-key';
 
 
-/* Flash and Sessions */
 app.use(flash());
 
 app.use(session({
@@ -45,7 +41,6 @@ app.use(session({
 app.use(methodOverride('newMethod'));
 
 
-/* Handlebars */
 app.engine('handlebars', hbs({defaultLayout: 'default'}));
 app.set('view engine', 'handlebars');
 
@@ -61,7 +56,7 @@ app.use('/*', function(req, res) {
 });
 
 app.listen(PORT, () =>  {
-    console.log(`Your Server is running at port ${PORT}`)
+    console.log(`On ${PORT}`)
 })
 
 
