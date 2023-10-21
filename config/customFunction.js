@@ -28,7 +28,6 @@ module.exports = {
         return true;
     },
 
-    // Helper function to send activation email
     sendConfirmationxxx: async function sendActivationEmail(email, activationLink) {
         var transporter = nodemailer.createTransport({
             host: 'mail.jobatrac.com.ng',
@@ -51,10 +50,9 @@ module.exports = {
             if (err) throw err;
         })
     },
-    // Helper function to send activation email
+    
     sendConfirmation: async function sendActivationEmail(email, activationLink) {
         try {
-        // Create a transporter using nodemailer
         const transporter = nodemailer.createTransport({
             service: 'smpt.zoho.com',
             port: 465,
@@ -65,7 +63,6 @@ module.exports = {
             },
         });
     
-        // Send email using the transporter
         await transporter.sendMail({
             from: 'noreply@rezeet.io',
             to: email,
